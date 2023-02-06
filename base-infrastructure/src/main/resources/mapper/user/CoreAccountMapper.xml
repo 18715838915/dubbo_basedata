@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.luoyu.dubbo.infrastructure.mysql.user.mapper.CoreAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.luoyu.dubbo.infrastructure.mysql.user.model.CoreAccount">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="isDeleted" property="isDeleted" />
+        <result column="deleteTime" property="deleteTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="createUserId" property="createUserId" />
+        <result column="updateUserId" property="updateUserId" />
+        <result column="status" property="status" />
+        <result column="notes" property="notes" />
+        <result column="versionNum" property="versionNum" />
+        <result column="tenantId" property="tenantId" />
+        <result column="orgId" property="orgId" />
+        <result column="userName" property="userName" />
+        <result column="password" property="password" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="phoneVerify" property="phoneVerify" />
+        <result column="emailVerify" property="emailVerify" />
+        <result column="locked" property="locked" />
+        <result column="retryCount" property="retryCount" />
+        <result column="userInfoId" property="userInfoId" />
+        <result column="mustResetPwd" property="mustResetPwd" />
+        <result column="defaultAdmin" property="defaultAdmin" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, createTime, isDeleted, deleteTime, updateTime, createUserId, updateUserId, status, notes, versionNum, tenantId, orgId, userName, password, phone, email, phoneVerify, emailVerify, locked, retryCount, userInfoId, mustResetPwd, defaultAdmin
+    </sql>
+
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.luoyu.dubbo.infrastructure.mysql.user.mapper.CoreUserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.luoyu.dubbo.infrastructure.mysql.user.model.CoreUserInfo">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="isDeleted" property="isDeleted" />
+        <result column="deleteTime" property="deleteTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="createUserId" property="createUserId" />
+        <result column="updateUserId" property="updateUserId" />
+        <result column="status" property="status" />
+        <result column="notes" property="notes" />
+        <result column="versionNum" property="versionNum" />
+        <result column="tenantId" property="tenantId" />
+        <result column="orgId" property="orgId" />
+        <result column="userName" property="userName" />
+        <result column="workId" property="workId" />
+        <result column="userCode" property="userCode" />
+        <result column="sex" property="sex" />
+        <result column="age" property="age" />
+        <result column="nationality" property="nationality" />
+        <result column="birthday" property="birthday" />
+        <result column="idCard" property="idCard" />
+        <result column="userType" property="userType" />
+        <result column="phone" property="phone" />
+        <result column="securityLevel" property="securityLevel" />
+        <result column="email" property="email" />
+        <result column="weChat" property="weChat" />
+        <result column="qq" property="qq" />
+        <result column="isMarried" property="isMarried" />
+        <result column="politicalAttitudes" property="politicalAttitudes" />
+        <result column="joinTime" property="joinTime" />
+        <result column="education" property="education" />
+        <result column="academicDegree" property="academicDegree" />
+        <result column="registeredPermanentAddressLocusId" property="registeredPermanentAddressLocusId" />
+        <result column="registeredPermanentAddressLocusDetail" property="registeredPermanentAddressLocusDetail" />
+        <result column="registeredPermanentAddressLocusFull" property="registeredPermanentAddressLocusFull" />
+        <result column="addressAreaId" property="addressAreaId" />
+        <result column="detailedAddress" property="detailedAddress" />
+        <result column="addressFull" property="addressFull" />
+        <result column="userAvatarUri" property="userAvatarUri" />
+        <result column="reason" property="reason" />
+        <result column="accountId" property="accountId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, createTime, isDeleted, deleteTime, updateTime, createUserId, updateUserId, status, notes, versionNum, tenantId, orgId, userName, workId, userCode, sex, age, nationality, birthday, idCard, userType, phone, securityLevel, email, weChat, qq, isMarried, politicalAttitudes, joinTime, education, academicDegree, registeredPermanentAddressLocusId, registeredPermanentAddressLocusDetail, registeredPermanentAddressLocusFull, addressAreaId, detailedAddress, addressFull, userAvatarUri, reason, accountId
+    </sql>
+
+</mapper>
